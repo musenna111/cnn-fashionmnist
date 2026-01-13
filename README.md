@@ -87,3 +87,19 @@ Bu projede CNN mimarisinin görüntü sınıflandırma problemlerinde etkili old
 
 ## 🔗 GitHub Repository
 👉 https://github.com/musenna111/cnn-fashionmnist
+
+
+## 📊 Training Results
+
+### Loss Curve
+Model eğitimi boyunca eğitim (train) ve test (validation) kayıp değerlerinin değişimi:
+
+![Loss Curve](loss_curve.png)
+
+---
+
+### Accuracy Curve
+Epoch’lara göre eğitim ve test doğruluk (accuracy) değerleri:
+
+![Accuracy Curve](accuracy_curve.png)
+
