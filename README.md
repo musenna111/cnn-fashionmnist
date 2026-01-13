@@ -64,13 +64,48 @@ Input (1×28×28)
 
 ---
 
-## 🔍 Confusion Matrix
-Confusion Matrix analizi ile özellikle **Shirt / T-shirt / Pullover** sınıflarında karışıklık olduğu gözlemlenmiştir.
+## 🔍 Confusion Matrix Analizi
+
+Model performansının sınıf bazında incelenmesi amacıyla Confusion Matrix oluşturulmuştur.
+
+Çoğu sınıf için doğru sınıflandırma oranı yüksektir.
+
+Hatalı tahminler genellikle görsel olarak birbirine benzeyen sınıflar (ör. Shirt – T-shirt/top) arasında gerçekleşmiştir.
+
+Bu durum, veri setinin doğası gereği beklenen bir sonuçtur.
 
 ---
 
+📊 Eğitim Grafikleri ve Başarı Metriklerinin Detaylı Analizi
+
+Bu çalışmada Fashion-MNIST veri seti üzerinde geliştirilen Evrişimsel Sinir Ağı (CNN) modeli, eğitim ve test süreçleri boyunca çeşitli performans metrikleri kullanılarak değerlendirilmiştir.
+Modelin öğrenme süreci hem sayısal değerler hem de grafiksel gösterimler ile analiz edilmiştir.
+
+Kayıp (Loss) Analizi
+
+Loss vs Epoch grafiğinde, modelin her epoch sonunda hesaplanan eğitim (train) kaybı ve test (validation) kaybı değerleri gösterilmektedir.
+
+Eğitim kaybının epoch’lar ilerledikçe istikrarlı bir şekilde azaldığı gözlemlenmiştir.
+
+Test kaybı da benzer bir eğilim sergileyerek eğitim kaybına paralel şekilde düşmüştür.
+
+Eğitim ve test kayıpları arasında aşırı bir fark oluşmaması, modelin overfitting yapmadığını göstermektedir.
+
+Bu sonuçlar, modelin veriyi başarılı bir şekilde öğrendiğini ve genelleme kabiliyetinin yüksek olduğunu göstermektedir.
+Doğruluk (Accuracy) Analizi
+
+Accuracy vs Epoch grafiği, modelin sınıflandırma başarımını değerlendirmek amacıyla kullanılmıştır.
+
+Eğitim doğruluğu epoch’lar boyunca artış göstermiş ve yüksek bir değere ulaşmıştır.
+
+Test doğruluğu da eğitim doğruluğuna yakın seyretmiş ve modelin genel veri üzerinde tutarlı sonuçlar verdiği gözlemlenmiştir.
+
+Eğitim ve test doğrulukları arasındaki farkın düşük olması, modelin ezberleme yerine öğrenme gerçekleştirdiğini göstermektedir.
 ## 🧠 Sonuç
-Bu projede CNN mimarisinin görüntü sınıflandırma problemlerinde etkili olduğu görülmüş ve akademik düzeyde başarılı sonuçlar elde edilmiştir.
+Elde edilen grafikler ve başarı metrikleri incelendiğinde:
+Modelin istikrarlı şekilde öğrendiği
+Aşırı öğrenme (overfitting) göstermediği
+Test verisi üzerinde yüksek doğrulukla sonuç verdiği sonucuna ulaşılmıştır.
 
 ---
 
